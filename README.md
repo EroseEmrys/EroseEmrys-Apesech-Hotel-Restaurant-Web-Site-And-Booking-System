@@ -1,40 +1,102 @@
-# Getting Started with Create React App
+# Apesech Hotel Restaurant Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the frontend of the Apesech Hotel Restaurant project. This project is designed to provide a user-friendly interface for managing hotel and restaurant bookings, menus, and customer service operations.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Apesech Hotel Restaurant frontend is built using HTML, CSS, and JavaScript. It interacts with a backend API to perform operations such as booking rooms and tables, managing menu items, and handling customer service requests. This repository contains all the necessary files for the frontend interface.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Booking Management**: Easily book rooms and tables.
+- **Menu Management**: View and manage the restaurant menu.
+- **Responsive Design**: Optimized for various screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+```
+/apesech-hotel-restaurant-frontend
+├── index.html          # Main landing page
+├── booking.html        # Booking management page
+├── menu.html           # Menu management page
+├── css/
+│   ├── styles.css      # Main stylesheet
+├── js/
+│   ├── booking.js      # JavaScript for booking functionality
+│   ├── menu.js         # JavaScript for menu management functionality
+└── assets/
+    ├── images/         # Image assets
+    └── icons/          # Icon assets
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run this project locally, you'll need:
 
-### `npm run eject`
+- A web browser (e.g., Chrome, Firefox, Safari)
+- Basic knowledge of HTML, CSS, and JavaScript
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/your-username/apesech-hotel-restaurant-frontend.git
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Navigate to the project directory**:
+
+   ```bash
+   cd apesech-hotel-restaurant-frontend
+   ```
+
+3. **Open `index.html` in your web browser**:
+
+   You can simply double-click the `index.html` file or open it in your browser.
+
+## Usage
+
+### Booking Management
+
+Navigate to the `booking.html` page to manage hotel and restaurant bookings. Fill out the booking form and submit to create a new booking.
+
+### Menu Management
+
+Go to the `menu.html` page to view and manage menu items. The page allows you to view the current menu and make updates if necessary.
+
+### Example Code Snippet
+
+```html
+<!-- Example form in booking.html -->
+<form id="bookingForm">
+  <label for="customerName">Customer Name:</label>
+  <input type="text" id="customerName" name="customerName" required />
+
+  <label for="bookingDate">Booking Date:</label>
+  <input type="date" id="bookingDate" name="bookingDate" required />
+
+  <label for="roomType">Room Type:</label>
+  <input type="text" id="roomType" name="roomType" required />
+
+  <label for="tableNumber">Table Number:</label>
+  <input type="text" id="tableNumber" name="tableNumber" required />
+
+  <button type="submit">Submit Booking</button>
+</form>
+```
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and submit a pull request if you'd like to contribute.
